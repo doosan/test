@@ -1,0 +1,22 @@
+"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "editor.tokenColorCustomizations": {
+        "functions": "#ff0000",
+        "variables": "#FFFF00",
+        "textMateRules": [
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#FF8040"
+                }
+            }
+        ]
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+
+
+f1 -> settings 입력 -> Preferences: Open Settings (JSON) 클릭

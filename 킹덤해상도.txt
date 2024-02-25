@@ -1,0 +1,48 @@
+https://github.4ones.com/karon/Cocos_SlotMaster_Kingdoms.git   
+
+
+1024 768
+
+4:3
+
+
+720 1559
+
+
+
+
+let maxHeight : number = 960;
+        let maxWidth : number = 1560;
+
+        let screenRatio = cc.view.getFrameSize().width / cc.view.getFrameSize().height;
+        
+        let designRatio1 = cc.Canvas.instance.designResolution.width / cc.Canvas.instance.designResolution.height;
+
+        let designRatio2 = cc.Canvas.instance.designResolution.width / maxHeight;
+    
+        let designRatio3 = maxWidth / cc.Canvas.instance.designResolution.height;
+        
+        if (screenRatio <= designRatio2) 
+        {
+            cc.view.setDesignResolutionSize(cc.Canvas.instance.designResolution.width , maxHeight, cc.ResolutionPolicy.SHOW_ALL);
+            this.getComponent(cc.Widget).updateAlignment();
+        }
+        else if (screenRatio < designRatio1)
+        {
+            cc.view.setDesignResolutionSize(cc.Canvas.instance.designResolution.width, cc.view.getFrameSize().width / cc.Canvas.instance.designResolution.width * cc.view.getFrameSize().height, cc.ResolutionPolicy.FIXED_WIDTH);
+            this.getComponent(cc.Widget).updateAlignment();
+        } 
+        else
+        {
+            if(screenRatio > designRatio3)
+            {
+                cc.view.setDesignResolutionSize(maxWidth, cc.Canvas.instance.designResolution.height, cc.ResolutionPolicy.SHOW_ALL);
+                this.getComponent(cc.Widget).updateAlignment();
+            }
+            else
+            {
+                cc.view.setDesignResolutionSize(cc.view.getFrameSize().width, cc.Canvas.instance.designResolution.height, cc.ResolutionPolicy.FIXED_HEIGHT);
+                this.getComponent(cc.Widget).updateAlignment();
+                this.setFitHeight();
+            }
+        }

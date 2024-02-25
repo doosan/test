@@ -1,0 +1,7 @@
+컴퓨터\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\GroupPolicy
+
+DWORD(32비트)
+
+fMinimizeConnections
+
+10016887776

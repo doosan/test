@@ -1,0 +1,55 @@
+Object.setPrototypeOf(param, BaseBookInfo.prototype);
+
+function padLeft(value: string, padding: any) {
+
+if (typeof padding === "number") {
+
+return Array(padding + 1).join(" ") + value;
+
+}
+
+if (typeof padding === "string") {
+
+return padding + value;
+
+}
+
+throw new Error(`Expected string or number, got '${padding}'.`);
+
+}
+
+start()
+{
+   cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.OnKeyDown, this);
+}
+
+https://h5s.azureedge.net/slot/web-mobile_test5/index.html
+update()
+{
+  // switch (event.keyCode) 
+        // {
+        //     case cc.macro.KEY.space:
+        //         //PopupSystem.Instance.AddCachedPopup<PopupBehaviour>("dasf", "asdfsadf");
+        //         NetworkSystem.HTTPRequester.FishBuy(20, 1, null);
+                
+        //             break;
+        // }
+}
+
+
+
+
+if(true == Util.existValueInEnum(FeatureType, featureValue))
+
+
+@property({ type: cc.Enum(AudioTriggerType) })
+
+public constructor(...params:any)
+
+C:\CocosDashboard_1.0.14\resources\.editors\Creator\2.4.6\resources\static\preview-templates
+
+enum E { A, B }
+const keys = Object.keys(E).filter(k => typeof E[k as any] === "number"); // ["A", "B"]
+const values = keys.map(k => E[k as any]); // [0, 1]
+
+
